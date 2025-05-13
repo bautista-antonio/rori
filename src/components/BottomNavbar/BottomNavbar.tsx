@@ -3,13 +3,13 @@ import Image from "next/image";
 import homeIconUrl from "@/icons/home-icon.svg?url";
 import addIconUrl from "@/icons/add-icon.svg?url";
 import exploreIconUrl from "@/icons/explore-icon.svg?url";
-import { JSX } from "react";
+import { FC } from "react";
 
 /**
  * A bottom navigation bar component.
  */
 
-const BottomNavbar = (): JSX.Element => {
+const BottomNavbar: FC = () => {
   return (
     <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-charcoal rounded-full px-6 py-3 gap-6 flex items-center justify-between shadow-lg z-50">
       <Link
