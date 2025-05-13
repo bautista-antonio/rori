@@ -1,20 +1,37 @@
 import Link from "next/link";
 import Image from "next/image";
-import homeUrl from "@/icons/home-icon.svg?url";
-import addUrl from "@/icons/add-icon.svg?url";
-import exploreUrl from "@/icons/explore-icon.svg";
+import homeIconUrl from "@/icons/home-icon.svg?url";
+import addIconUrl from "@/icons/add-icon.svg?url";
+import exploreIconUrl from "@/icons/explore-icon.svg?url";
+import { JSX } from "react";
 
-const BottomNavbar = () => {
+/**
+ * A bottom navigation bar component.
+ */
+
+const BottomNavbar = (): JSX.Element => {
   return (
     <nav className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-charcoal rounded-full px-6 py-3 gap-6 flex items-center justify-between shadow-lg z-50">
-      <Link href="/" className="focus:outline-none hover:opacity-80 transition">
-        <Image src={homeUrl} className="w-6 h-6 text-ivory" alt="" />
+      <Link
+        href="/"
+        className="focus:outline-none hover:opacity-80 transition"
+        aria-label="Home"
+      >
+        <Image src={homeIconUrl} className="text-ivory" alt="" />
       </Link>
-      <button className="focus:outline-none hover:opacity-80 transition">
-        <Image src={addUrl} className="w-6 h-6 text-ivory" alt="" />
+      <button
+        type="button"
+        className="focus:outline-none hover:opacity-80 transition"
+        aria-label="Create entry"
+      >
+        <Image src={addIconUrl} className="text-ivory" alt="" />
       </button>
-      <button className="focus:outline-none hover:opacity-80 transition">
-        <Image src={exploreUrl} className="w-6 h-6 text-ivory" alt="" />
+      <button
+        type="button"
+        className="focus:outline-none hover:opacity-80 transition"
+        aria-label="Explore"
+      >
+        <Image src={exploreIconUrl} className="text-ivory" alt="" />
       </button>
     </nav>
   );
