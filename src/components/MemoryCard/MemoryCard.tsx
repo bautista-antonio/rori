@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import { MemoryCardProps } from "@/types/memory";
-import arrowIconUrl from "@/icons/view-memory-arrow.svg";
+import arrowIconUrl from "@/icons/view-memory-arrow.svg?url";
 
 /**
  * Card component that displays a memory.
@@ -10,7 +10,7 @@ import arrowIconUrl from "@/icons/view-memory-arrow.svg";
 const MemoryCard: FC<MemoryCardProps> = ({ title, createdAt }) => {
   return (
     /* v Card shape */
-    <div className="flex flex-col w-64 bg-earthy-brown text-ivory rounded-lg shadow-md px-6 pb-8">
+    <div className="flex flex-col w-64 bg-earthy-brown text-ivory rounded-b-lg shadow-md px-6 pb-8">
       {/* v Punch wholes decoration*/}
       <div className="flex justify-between">
         <div className="w-4 h-4 bg-ivory rounded-full"></div>
@@ -36,7 +36,7 @@ const MemoryCard: FC<MemoryCardProps> = ({ title, createdAt }) => {
       </div>
       <button className="flex items-center justify-between">
         <p>View Memory</p>
-        <Image src={arrowIconUrl} alt=""></Image>
+        <Image src={arrowIconUrl} alt="" width={24} height={24} />
       </button>
     </div>
   );
