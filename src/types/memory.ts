@@ -15,4 +15,4 @@ export interface Memory {
   location?: Location;
 }
 
-export type MemoryCardProps = Pick<Memory, "title" | "createdAt">;
+export type MemoryCardProps = Pick<Memory, "id" | "title" | "createdAt">;

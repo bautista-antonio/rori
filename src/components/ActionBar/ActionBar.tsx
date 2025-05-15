@@ -11,7 +11,7 @@ import { FC } from "react";
 
 const ActionBar: FC = () => {
   return (
-    <header className="w-full flex justify-between items-center py-3 text-charcoal">
+    <header className="w-full flex justify-between items-center py-3 px-4 text-charcoal">
       <h3 className={`text-xl ${breeSerif.className}`}>Rori</h3>
       <button type="button" aria-label="Settings">
         <Image src={settingsIconUrl} alt="Settings" width={24} height={24} />

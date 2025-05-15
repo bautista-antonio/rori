@@ -10,10 +10,13 @@ const MemoryCarousel = ({
   memories: MemoryCardProps[];
 }): JSX.Element => {
   return (
-    <section className="flex flex-col items-center justify-center my-8">
-      <h3>Recent memories ({memories.length})</h3>
+    <section className="flex flex-col gap-4 items-center my-8 w-full overflow-hidden">
+      <h3 className="font-medium">
+        Recent memories (
+        <span className="text-medium-gray">{memories.length}</span>)
+      </h3>
       {/* v Carousel container */}
-      <div className="flex gap-6 overflow-x-scroll">
+      <div className="flex gap-6 overflow-x-auto max-w-full px-16 snap-x snap-mandatory scroll-smooth scrollbar-hidden">
         {memories.map((memory, idx) => (
           <MemoryCard key={idx} {...memory} />
         ))}
