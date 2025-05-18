@@ -1,11 +1,10 @@
+import Title from "@/components/typographic/Title/Title";
 import Image from "next/image";
 
 export default function Welcome() {
   return (
     <div className="flex flex-col items-center gap-12 mx-4">
-      <h1 className="text-4xl font-bold text-center leading-10 max-w-xs my-6">
-        The meals we love often start with a story
-      </h1>
+      <Title>The meals we love often start with a story</Title>
       <Image
         src="/images/welcome-screen/welcome-screen-illustration.png"
         alt="Welcome"
