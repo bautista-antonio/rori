@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ActionBar from "@/components/ActionBar/ActionBar";
 import Title from "@/components/typographic/Title/Title";
+import LoginForm from "@/components/LoginForm/LoginForm";
 
 const Login = () => {
   return (
@@ -11,20 +12,12 @@ const Login = () => {
         <LoginForm />
         <div className="flex flex-col items-center gap-12">
           <p className="text-base">Or</p>
-          <div className="flex flex-col gap-4">
-            <SocialLoginButton
-              provider="google"
-              text="Sign in with Google"
-              icon="/public/icons/google.svg"
-            />
-            <SocialLoginButton
-              provider="apple"
-              text="Sign in with Apple"
-              icon="/public/icons/apple.svg"
-            />
-          </div>
+          <div className="flex flex-col gap-4"></div>
           <p>
-            Don't have an account? <Link className="underline">Sign up</Link>
+            Don't have an account?{" "}
+            <Link href="/registration" className="underline">
+              Sign up
+            </Link>
           </p>
         </div>
       </div>

@@ -6,6 +6,7 @@
   --color-medium-gray: oklch(0.56 0.0117 48.5);
   --color-light-gray: oklch(0.85 0.0026 48.71);
   --color-earthy-brown: oklch(0.45 0.0499 81.12);
+  --color-cerulean-blue: oklch(0.5566 0.1372 253.11);
 }
 
 @layer utilities {
