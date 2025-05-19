@@ -1,4 +1,5 @@
 import dmMono from "@/fonts/dm-mono";
+import Button from "@/components/Button/Button";
 
 const LoginForm = () => {
   return (
@@ -25,9 +26,7 @@ const LoginForm = () => {
           className="border-b-2 border-charcoal py-4 focus:outline-none focus:ring-2 focus:ring-cerulean-blue placeholder:text-medium-gray"
         />
       </div>
-      <button className="w-full max-w-64 px-4 py-3 bg-earthy-brown text-ivory font-medium rounded-full shadow-md mt-4 hover:bg-earthy-brown/80 transition duration-300">
-        Sign In
-      </button>
+      <Button text="Sign in" type="button" variant="primary" />
     </form>
   );
 };

@@ -1,7 +1,7 @@
 import ActionBar from "@/components/ActionBar/ActionBar";
 import BottomNavbar from "@/components/BottomNavbar/BottomNavbar";
 import MemoryCarousel from "@/components/MemoryCarousel/MemoryCarousel";
-import WelcomingHeader from "@/components/WelcomingHeader/WelcomingHeader";
+import WelcomingHeader from "@/components/typographic/WelcomingHeader/WelcomingHeader";
 
 const sampleMemories = [
   {
