@@ -3,9 +3,9 @@ import Button from "@/components/Button/Button";
 
 const LoginForm = () => {
   return (
-    <form className="flex flex-col gap-8 w-full max-w-3xs">
+    <form className="flex flex-col justify-center gap-8 w-full max-w-3xs text-sm">
       <div className="flex flex-col gap-0.5">
-        <label htmlFor="email" className="text-base font-medium">
+        <label htmlFor="email" className="font-medium">
           Email
         </label>
         <input
@@ -16,7 +16,7 @@ const LoginForm = () => {
         />
       </div>
       <div className="flex flex-col gap-0.5">
-        <label htmlFor="password" className="text-base font-medium">
+        <label htmlFor="password" className="font-medium">
           Password
         </label>
         <input
@@ -26,7 +26,7 @@ const LoginForm = () => {
           className="border-b-2 border-charcoal py-4 focus:outline-none focus:ring-2 focus:ring-cerulean-blue placeholder:text-medium-gray"
         />
       </div>
-      <Button text="Sign in" type="button" variant="primary" />
+      <Button fullWidth={true} text="Sign in" type="button" variant="primary" />
     </form>
   );
 };

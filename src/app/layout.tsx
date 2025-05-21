@@ -17,7 +17,7 @@ export default function RootLayout({
       lang="en"
       className={`bg-ivory text-charcoal ${hostGrotesk.className}`}
     >
-      <body className="pt-14">{children}</body>
+      <body className="px-4 mt-14">{children}</body>
     </html>
   );
 }

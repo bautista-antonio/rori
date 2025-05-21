@@ -21,7 +21,7 @@ const ActionBar: FC<ActionBarProps> = ({ showSettings = false }) => {
     <header
       className={`w-full flex ${justifyContent} items-center py-3 px-4 text-charcoal`}
     >
-      <h3 className={`text-xl ${breeSerif.className}`}>Rori</h3>
+      <h3 className={`text-lg ${breeSerif.className}`}>Rori</h3>
 
       {/* To render settings button*/}
       {showSettings && (
