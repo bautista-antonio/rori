@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ActionBar from "@/components/ActionBar/ActionBar";
-import Title from "@/components/typographic/Title/Title";
+import Title from "@/components/Title/Title";
 import LoginForm from "@/components/LoginForm/LoginForm";
 import Button from "@/components/Button/Button";
 
@@ -40,7 +40,7 @@ const Login = () => {
           </div>
           <p className="font-medium text-base text-center text-earthy-brown">
             Don't have an account?{" "}
-            <Link href="/registration" className="underline">
+            <Link href="/create-account" className="underline">
               Sign up
             </Link>
           </p>
