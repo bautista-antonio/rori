@@ -5,9 +5,8 @@ import ActionBar from "@/components/ActionBar/ActionBar";
 import Title from "@/components/Title/Title";
 import LoginForm from "@/components/LoginForm/LoginForm";
 import Button from "@/components/Button/Button";
-
-import googleIconUrl from "@/icons/social/google-logo.svg?url";
-import appleIconUrl from "@/icons/social/apple-logo-white.svg?url";
+import AppleLogo from "@/icons/social/apple-logo.svg";
+import GoogleLogo from "@/icons/social/google-logo.svg";
 
 const Login = () => {
   return (
@@ -15,7 +14,7 @@ const Login = () => {
       <ActionBar showSettings={false} />
       {/* Content */}
       <main className="flex flex-col items-center gap-8">
-        <Title>Sign in</Title>
+        <Title as="h1" text="Sign up" color="dark" size="sm" align="center" />
         <LoginForm />
         {/* Social sign in buttons */}
         <div className="flex flex-col items-center gap-8 max-w-3xs  w-full">
@@ -23,7 +22,7 @@ const Login = () => {
           <div className="flex flex-col gap-4 w-full">
             <Button
               fullWidth={true}
-              icon={<Image src={googleIconUrl} alt="" width={16} height={16} />}
+              icon={<GoogleLogo />}
               iconPosition="left"
               text="Sign in with Google"
               type="button"
@@ -31,7 +30,7 @@ const Login = () => {
             />
             <Button
               fullWidth={true}
-              icon={<Image src={appleIconUrl} alt="" width={16} height={16} />}
+              icon={<AppleLogo />}
               iconPosition="left"
               text="Sign in with Apple"
               type="button"

@@ -4,7 +4,8 @@
 
 type Color = "dark" | "light" | "dark-gray" | "light-gray" | "brown" | "green";
 
-interface Title {
+interface TitleProps {
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   text: string;
   color?: Color;
   size?: "sm" | "md" | "lg";
@@ -12,4 +13,4 @@ interface Title {
   underline?: boolean;
 }
 
-export type { Title, Color };
+export type { TitleProps, Color };

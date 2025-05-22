@@ -6,7 +6,7 @@ import { ButtonProps } from "@/types/button";
  * This is a button component used for the main action in any given page
  * @returns {JSX.Element} - The button component
  */
-const PrimaryButton: FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
   fullWidth,
   icon,
   iconPosition,
@@ -44,4 +44,4 @@ const PrimaryButton: FC<ButtonProps> = ({
   );
 };
 
-export default PrimaryButton;
+export default Button;

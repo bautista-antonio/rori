@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import homeIconUrl from "@/icons/home-icon.svg?url";
-import addIconUrl from "@/icons/add-icon.svg?url";
-import exploreIconUrl from "@/icons/explore-icon.svg?url";
+import HomeIcon from "@/icons/home-icon.svg";
+import AddIcon from "@/icons/add-icon.svg";
+import ExploreIcon from "@/icons/explore-icon.svg";
 import { FC } from "react";
 
 /**
@@ -17,21 +17,21 @@ const BottomNavbar: FC = () => {
         className="focus:outline-none hover:opacity-80 transition"
         aria-label="Home"
       >
-        <Image src={homeIconUrl} className="text-ivory" alt="" />
+        <HomeIcon />
       </Link>
       <button
         type="button"
         className="focus:outline-none hover:opacity-80 transition"
         aria-label="Create entry"
       >
-        <Image src={addIconUrl} className="text-ivory" alt="" />
+        <AddIcon />
       </button>
       <button
         type="button"
         className="focus:outline-none hover:opacity-80 transition"
         aria-label="Explore"
       >
-        <Image src={exploreIconUrl} className="text-ivory" alt="" />
+        <ExploreIcon />
       </button>
     </nav>
   );

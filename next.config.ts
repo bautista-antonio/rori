@@ -28,6 +28,14 @@ const nextConfig: NextConfig = {
 
     return config;
   },
+  turbopack: {
+    rules: {
+      "*.svg": {
+        as: "*.ts",
+        loaders: ["@svgr/webpack"],
+      },
+    },
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

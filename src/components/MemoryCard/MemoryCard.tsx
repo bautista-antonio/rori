@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { MemoryCardProps } from "@/types/memory";
-import arrowIconUrl from "@/icons/view-memory-arrow.svg?url";
+import ArrowIcon from "@/icons/view-memory-arrow.svg";
 
 /**
  * Card component that displays a memory.
@@ -40,7 +40,7 @@ const MemoryCard: FC<MemoryCardProps> = ({ id, title, createdAt }) => {
           </div>
           <button className="flex items-center gap-2">
             <p className="text-base">View Memory</p>
-            <Image src={arrowIconUrl} alt="" width={16} height={16} />
+            <ArrowIcon />
           </button>
         </div>
       </div>

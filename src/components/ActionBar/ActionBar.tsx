@@ -1,8 +1,8 @@
 import Image from "next/image";
-import breeSerif from "@/fonts/bree-serif";
-
-import settingsIconUrl from "@/icons/settings-icon.svg?url";
 import { FC } from "react";
+
+import breeSerif from "@/fonts/bree-serif";
+import SettingsIcon from "@/icons/settings-icon.svg";
 
 interface ActionBarProps {
   showSettings?: boolean;
@@ -26,7 +26,7 @@ const ActionBar: FC<ActionBarProps> = ({ showSettings = false }) => {
       {/* To render settings button*/}
       {showSettings && (
         <button type="button" aria-label="Settings">
-          <Image src={settingsIconUrl} alt="Settings" width={24} height={24} />
+          <SettingsIcon />
         </button>
       )}
     </header>
